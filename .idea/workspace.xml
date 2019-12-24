@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98d03af6-2896-4018-85ce-90d597999c62" name="Default Changelist" comment="">
+    <list default="true" id="0cfaedd3-85dd-44c3-90d5-378a888f3b87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/utilities/BrowserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/utilities/BrowserUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/utilities/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/utilities/ExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/utilities/ConfigurationReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +68,6 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="98d03af6-2896-4018-85ce-90d597999c62" name="Default Changelist" comment="" />
       <created>1577067650645</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -75,11 +81,11 @@
       <updated>1577068399874</updated>
     </task>
     <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/KaterynaSemenenko/OdooOnline2&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
-      <created>1577157921079</created>
+      <created>1577215413979</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1577157921079</updated>
+      <updated>1577215413979</updated>
     </task>
     <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/KaterynaSemenenko/OdooOnline2&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
       <created>1577159144169</created>
