@@ -1,4 +1,23 @@
 package com.odoo.runners;
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features =  "src/test/resources/features",
+               // "/Users/skateryna/IdeaProjects/OpooOnline2/src/test/resources",
+
+        glue = "/com/odoo/step_definitions", // step_definitions
+
+        dryRun = false,
+        tags = "@PointOfSale",
+        plugin = { "html:target/default-cucumber-reports",
+                "json:target/cucumber.json"
+        }
+)
+
 public class CucumberRunner {
+
 }

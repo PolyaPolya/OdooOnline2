@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98d03af6-2896-4018-85ce-90d597999c62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/pages/PointOfSalePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/PointOfSaleStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PointOfSale.feature" afterDir="false" />
+    <list default="true" id="c18a1089-7514-4e4d-88e1-6d1c98a8609c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/LoginStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/pages/PointOfSalePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/pages/PointOfSalePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/runners/CucumberRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/PointOfSaleStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/PointOfSaleStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PointOfSale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PointOfSale.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +67,28 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OdooOnline2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.odoo.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.odoo.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.odoo.runners.CucumberRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CucumberRunner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577157921079</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Login functionality is done. You can do your part too. Good luck">
+      <created>1577682717245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577682717245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +136,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login functionality is done. You can do your part too. Good luck" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login functionality is done. You can do your part too. Good luck" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/odoo/runners/CucumberRunner.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
