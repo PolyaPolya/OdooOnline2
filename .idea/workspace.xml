@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
+    <list default="true" id="59e0cefa-96c0-43bd-8641-98ff7191291f" name="Default Changelist" comment="Merge branch 'Eyyup' of https://github.com/KaterynaSemenenko/OdooOnline2 into Eyyup&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="320c4bf6-bc89-44da-9607-9ff7f287f56d" name="Default Changelist" comment="" />
+      <changelist id="59e0cefa-96c0-43bd-8641-98ff7191291f" name="Default Changelist" comment="Merge branch 'Eyyup' of https://github.com/KaterynaSemenenko/OdooOnline2 into Eyyup&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
       <created>1577067650645</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
