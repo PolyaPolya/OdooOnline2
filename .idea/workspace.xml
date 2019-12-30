@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e0cefa-96c0-43bd-8641-98ff7191291f" name="Default Changelist" comment="Merge branch 'Eyyup' of https://github.com/KaterynaSemenenko/OdooOnline2 into Eyyup&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+
+    <list default="true" id="98d03af6-2896-4018-85ce-90d597999c62" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,12 +63,31 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59e0cefa-96c0-43bd-8641-98ff7191291f" name="Default Changelist" comment="Merge branch 'Eyyup' of https://github.com/KaterynaSemenenko/OdooOnline2 into Eyyup&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+
+      <changelist id="98d03af6-2896-4018-85ce-90d597999c62" name="Default Changelist" comment="" />
+
       <created>1577067650645</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577067650645</updated>
     </task>
+
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/KaterynaSemenenko/OdooOnline2&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
+      <created>1577068399874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577068399874</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/KaterynaSemenenko/OdooOnline2&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
+      <created>1577157921079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577157921079</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
