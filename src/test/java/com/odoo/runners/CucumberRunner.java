@@ -6,10 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "/Users/skateryna/IdeaProjects/OpooOnline2/src/test/resources",
+        features =  "src/test/resources/features",
+               // "/Users/skateryna/IdeaProjects/OpooOnline2/src/test/resources",
+
         glue = "/com/odoo/step_definitions", // step_definitions
+
         dryRun = false,
-   //     tags = "@InventoryManager",
+        tags = "@PointOfSale",
         plugin = { "html:target/default-cucumber-reports",
                 "json:target/cucumber.json"
         }
