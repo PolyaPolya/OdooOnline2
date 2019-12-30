@@ -1,3 +1,4 @@
+@Login
 Feature: Login
   As a user, I should be able to login into oddo
   under different roles with username and password
