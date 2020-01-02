@@ -107,8 +107,8 @@ public class BasePage {
 
     public void goToMyUser() {
         waitUntilLoaderMaskDisappear();
-        BrowserUtilities.waitForClickablility(userName, 5).click();
-        BrowserUtilities.waitForClickablility(myUser, 5).click();
+        BrowserUtilities.waitForClickability(userName, 5).click();
+        BrowserUtilities.waitForClickability(myUser, 5).click();
     }
 
     public void waitForPageSubTitle(String pageSubtitleText) {

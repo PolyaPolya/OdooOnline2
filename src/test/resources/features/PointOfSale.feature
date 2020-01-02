@@ -13,5 +13,11 @@ As a user I should be able create product under the "Product" subModule in the P
     Then user will click the Products subModule first and then click the Pos Categories
     Then user will click the Create button
 
-    # not done yet --  Work in progress
+    @Orders
+    Scenario: Deleting an order under "Orders" module
+      Then user will click the Point Of Sale tab
+      Then user will click the Orders button
+      Then user will check the order to be deleted
+      Then user will click the Action on the top of the page
+      Then user will click the delete button
 
