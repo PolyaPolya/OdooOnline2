@@ -27,7 +27,7 @@ public class PointOfSalePage extends BasePage{
    @FindBy(css = "input[name='name']")
     public WebElement nameInputBox;
 
-   @FindBy (xpath = "//input[@id='o_field_input_6']")
+   @FindBy (css = "input[class='o_input ui-autocomplete-input'][id='o_field_input_6']")
     public WebElement parentCategoryDropDownBox;
 
    @FindBy(css = "input[id='o_field_input_7']")
