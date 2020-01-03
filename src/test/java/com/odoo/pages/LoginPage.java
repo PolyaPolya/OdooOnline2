@@ -10,6 +10,7 @@ public class LoginPage {
 
     // this button we will click, when we just open URL
     // we need to click it in purpose to see Username and Password input boxes
+
     @FindBy (xpath = "//b[text()='Sign in']")
     public WebElement SignInButton;
 
