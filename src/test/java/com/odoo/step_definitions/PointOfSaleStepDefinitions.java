@@ -4,6 +4,7 @@ import com.odoo.pages.PointOfSalePage;
 import com.odoo.utilities.BrowserUtilities;
 import com.odoo.utilities.Driver;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,6 @@ public class PointOfSaleStepDefinitions {
 
 
     PointOfSalePage pointOfSalePage = new PointOfSalePage();
-   //  WebDriverWait wait=new WebDriverWait();
 
 
     @Then("user will click the Point Of Sale tab")
@@ -42,28 +42,26 @@ public class PointOfSaleStepDefinitions {
         pointOfSalePage.nameInputBox.sendKeys("New Generation");
 
     }
-
+/*  I skipped this method since I could not locate it
+    I will try it later
     @Then("user enter info to the Parent Category")
     public void user_enter_info_to_the_Parent_Category() {
-      // BrowserUtilities.waitForClickablility(pointOfSalePage.parentCategoryDropDownBox,10);
+       BrowserUtilities.waitForVisibility(pointOfSalePage.parentCategoryDropDownBox,10);
         JavascriptExecutor js = (JavascriptExecutor) Driver.get();
         WebElement data = Driver.get().findElement(By.xpath("//li[@class='ui-menu-item']"));
         js.executeScript("arguments[0],click()",data);
       //  pointOfSalePage.parentCategoryDropDownBox.click();
     //    pointOfSalePage.parentCategoryDropDownBox.sendKeys("Books");
 
-
-
-
-     //   WebElement data = Driver.get().findElement(By.xpath("//li[@class='ui-menu-item']"));
-     //   BrowserUtilities.waitForClickablility(data,10);
-      //  data.click();
-
-    }
+*/
 
     @Then("user enter data to the box of sequence")
     public void user_enter_data_to_the_box_of_sequence() {
+
+        BrowserUtilities.waitForVisibility(pointOfSalePage.sequenceInputBox,10);
+        BrowserUtilities.wait(3);
         pointOfSalePage.sequenceInputBox.sendKeys("0110110");
+        BrowserUtilities.wait(3);
 
     }
 
@@ -72,6 +70,23 @@ public class PointOfSaleStepDefinitions {
         pointOfSalePage.saveButton.click();
 
     }
+
+    @Then("user will verify {string} for Name")
+    public void user_will_verify_for_Name(String string) {
+        BrowserUtilities.waitForVisibility(pointOfSalePage.createdName,10);
+        String expected ="New Generation";
+        String actual = pointOfSalePage.createdName.getText();
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Then("user will verify {string} for Sequence")
+    public void user_will_verify_for_Sequence(String string) {
+        BrowserUtilities.waitForVisibility(pointOfSalePage.createdSequence,10);
+       String expected ="110,110";
+       String actual =pointOfSalePage.createdSequence.getText();
+       Assert.assertEquals(expected,actual);
+    }
+
 
 
 

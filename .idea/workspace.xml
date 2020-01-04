@@ -1,48 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c18a1089-7514-4e4d-88e1-6d1c98a8609c" name="Default Changelist" comment="Login functionality is done. You can do your part too. Good luck">
+    <list default="true" id="98f880cf-30b2-4e85-80dd-7712e0b4d986" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/pages/PointOfSalePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/pages/PointOfSalePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/PointOfSaleStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/odoo/step_definitions/PointOfSaleStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PointOfSale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PointOfSale.feature" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1VMez5dwoIMUVyAoUiIuhPSr3lu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\esehm\IdeaProjects\OdooOnline2" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -58,7 +32,7 @@
   </component>
   <component name="RunManager">
     <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OdooOnline2" />
+      <module name="OpooOnline2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.odoo.runners.*" />
@@ -82,35 +56,6 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="c18a1089-7514-4e4d-88e1-6d1c98a8609c" name="Default Changelist" comment="" />
-      <created>1577067650645</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1577067650645</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/KaterynaSemenenko/OdooOnline2&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
-      <created>1577068399874</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1577068399874</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/KaterynaSemenenko/OdooOnline2&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
-      <created>1577157921079</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1577157921079</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Login functionality is done. You can do your part too. Good luck">
-      <created>1577682717245</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1577682717245</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,27 +63,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Login functionality is done. You can do your part too. Good luck" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login functionality is done. You can do your part too. Good luck" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/odoo/runners/CucumberRunner.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
