@@ -19,6 +19,6 @@ Scenario: Login as inventory manager
 
   @EventCrmManager
   Scenario: Login as events crm manager
-    Then user logs in as events crm manager with "eventscrmmanager32@info.com" username and "eventscrmmanager" password
+    Then user logs in as events crm manager with "eventscrmmanager33@info.com" username and "eventscrmmanager" password
     And user verifies that subtitle "#Inbox" is displayed
 
