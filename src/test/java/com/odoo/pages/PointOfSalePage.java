@@ -27,16 +27,20 @@ public class PointOfSalePage extends BasePage{
    @FindBy(css = "input[name='name']")
     public WebElement nameInputBox;
 
-   @FindBy (css = "input[class='o_input ui-autocomplete-input'][id='o_field_input_6']")
+   @FindBy (css = "input[id='o_field_input_137']")
     public WebElement parentCategoryDropDownBox;
 
-   @FindBy(css = "input[id='o_field_input_7']")
+   @FindBy(xpath = "//table//tbody//tr//td//*[@name='sequence']")
     public WebElement sequenceInputBox;
 
    @FindBy(xpath = " //button[@class='btn btn-primary btn-sm o_form_button_save']")
    public  WebElement saveButton;
 
+   @FindBy(xpath = "//table//tbody//td//*[text()='New Generation']")
+    public WebElement createdName;
 
+   @FindBy(xpath = "//table//tbody//td//*[text()='110,110']")
+    public WebElement createdSequence;
 
 
     }
