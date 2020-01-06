@@ -39,9 +39,20 @@ public class PointOfSalePage extends BasePage{
    @FindBy(xpath = "//table//tbody//td//*[text()='New Generation']")
     public WebElement createdName;
 
+   @FindBy(xpath = "//li[@class='active']//span[@class='oe_menu_text'][contains(text(),'Orders')]")
+    public WebElement ordersButton;
+  
    @FindBy(xpath = "//table//tbody//td//*[text()='110,110']")
     public WebElement createdSequence;
 
+   @FindBy(xpath = "//table//tbody//tr[1]//td//div//input[1]")
+    public WebElement deletedProductCheckbox;
+
+   @FindBy(xpath="//div[@class='btn-group o_dropdown']//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'][contains(text(),'Action')]")
+    public WebElement actionButton;
+
+   @FindBy(xpath = "//li//a[contains(text(),'Delete')]")
+    public WebElement deleteButton;
 
     }
 
