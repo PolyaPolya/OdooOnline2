@@ -39,7 +39,7 @@ public class PointOfSalePage extends BasePage{
    @FindBy(xpath = "//table//tbody//td//*[text()='New Generation']")
     public WebElement createdName;
 
-   @FindBy(xpath = "//li[@class='active']//span[@class='oe_menu_text'][contains(text(),'Orders')]")
+   @FindBy(xpath = "//a[@data-menu='489']//span")
     public WebElement ordersButton;
   
    @FindBy(xpath = "//table//tbody//td//*[text()='110,110']")

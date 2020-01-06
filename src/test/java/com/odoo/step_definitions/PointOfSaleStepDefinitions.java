@@ -35,7 +35,7 @@ public class PointOfSaleStepDefinitions {
     public void user_will_click_the_Create_button()
     {
         pointOfSalePage.poSCategoriesLink.click();
-        BrowserUtilities.waitForClickablility(pointOfSalePage.createButton,10);
+        BrowserUtilities.waitForClickability(pointOfSalePage.createButton,10);
         pointOfSalePage.createButton.click();
     }
 
