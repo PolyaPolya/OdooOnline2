@@ -27,19 +27,23 @@ public class PointOfSalePage extends BasePage{
    @FindBy(css = "input[name='name']")
     public WebElement nameInputBox;
 
-   @FindBy (xpath = "//input[@id='o_field_input_6']")
+   @FindBy (css = "input[id='o_field_input_137']")
     public WebElement parentCategoryDropDownBox;
 
-   @FindBy(css = "input[id='o_field_input_7']")
+   @FindBy(xpath = "//table//tbody//tr//td//*[@name='sequence']")
     public WebElement sequenceInputBox;
 
    @FindBy(xpath = " //button[@class='btn btn-primary btn-sm o_form_button_save']")
    public  WebElement saveButton;
 
+   @FindBy(xpath = "//table//tbody//td//*[text()='New Generation']")
+    public WebElement createdName;
 
    @FindBy(xpath = "//li[@class='active']//span[@class='oe_menu_text'][contains(text(),'Orders')]")
     public WebElement ordersButton;
-
+  
+   @FindBy(xpath = "//table//tbody//td//*[text()='110,110']")
+    public WebElement createdSequence;
 
    @FindBy(xpath = "//table//tbody//tr[1]//td//div//input[1]")
     public WebElement deletedProductCheckbox;
