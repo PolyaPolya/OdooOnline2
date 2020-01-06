@@ -35,7 +35,7 @@ public class LoginPage {
     public void login(String username, String password) {
         usernameTextBox.sendKeys(username);
         passwordTextBox.sendKeys(password);
-        BrowserUtilities.waitForClickablility(logInButton, 10);
+        BrowserUtilities.waitForClickability(logInButton, 10);
         logInButton.click();
 
     }

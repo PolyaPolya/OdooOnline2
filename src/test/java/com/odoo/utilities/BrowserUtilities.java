@@ -76,7 +76,7 @@ public class BrowserUtilities {
      * @param timeout
      * @return
      */
-    public static WebElement waitForClickablility(WebElement element, int timeout) {
+    public static WebElement waitForClickability(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.get(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
