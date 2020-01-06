@@ -27,8 +27,12 @@ public class PointOfSalePage extends BasePage{
    @FindBy(css = "input[name='name']")
     public WebElement nameInputBox;
 
-   @FindBy (css = "input[id='o_field_input_137']")
+   @FindBy (css = "div[class='o_input_dropdown']")
     public WebElement parentCategoryDropDownBox;
+
+   @FindBy(css = "ul[id='ui-id-1']>li:nth-of-type(6)")
+   public WebElement optionForDropDownBox;
+
 
    @FindBy(xpath = "//table//tbody//tr//td//*[@name='sequence']")
     public WebElement sequenceInputBox;
