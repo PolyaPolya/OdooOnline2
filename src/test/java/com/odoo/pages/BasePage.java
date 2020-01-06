@@ -39,7 +39,7 @@ public class BasePage {
     public boolean waitUntilLoaderMaskDisappear() {
         WebDriverWait wait = new WebDriverWait(Driver.get(), 30);
         try {
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div[class='loader-mask shown']")));
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@class='o_web_client oe_wait']")));
             return true;
         } catch (NoSuchElementException e) {
             System.out.println("Loader mask not found!");
@@ -52,11 +52,11 @@ public class BasePage {
     }
 
 
-    public void navigateTo(String moduleName, String subModuleName) {
+    public void navigateToModule(String moduleName) {
+
         Actions actions = new Actions(Driver.get());
         // somebody need to change this locators using the Module names
-        String moduleLocator = "//*[normalize-space()='" + moduleName + "' and @class='title title-level-1']";
-        String subModuleLocator = "//*[normalize-space()='" + subModuleName + "' and @class='title title-level-2']";
+        String moduleLocator = "//*[contains(@class,'application_menu')]//span[contains(text(),'"+moduleName.trim()+"')]";
 
         WebDriverWait wait = new WebDriverWait(Driver.get(), 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(moduleLocator)));
@@ -67,18 +67,9 @@ public class BasePage {
 
         waitUntilLoaderMaskDisappear();
 
-        BrowserUtilities.clickWithWait(module); //if click is not working well
-        WebElement subModule = Driver.get().findElement(By.xpath(subModuleLocator));
-        if (!subModule.isDisplayed()) {
-            actions.doubleClick(module).doubleClick().build().perform();
-            try {
-                wait.until(ExpectedConditions.visibilityOf(subModule));
-            } catch (Exception ex) {
-                ex.printStackTrace();
-                BrowserUtilities.clickWithJS(module);
-            }
-        }
-        BrowserUtilities.clickWithWait(subModule); //if click is not working well
+        BrowserUtilities.clickWithWait(module);
+
+
         //it waits until page is loaded and ajax calls are done
         BrowserUtilities.waitForPageToLoad(10);
     }
@@ -107,8 +98,8 @@ public class BasePage {
 
     public void goToMyUser() {
         waitUntilLoaderMaskDisappear();
-        BrowserUtilities.waitForClickablility(userName, 5).click();
-        BrowserUtilities.waitForClickablility(myUser, 5).click();
+        BrowserUtilities.waitForClickability(userName, 5).click();
+        BrowserUtilities.waitForClickability(myUser, 5).click();
     }
 
     public void waitForPageSubTitle(String pageSubtitleText) {
