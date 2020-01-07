@@ -45,12 +45,22 @@ public class PointOfSaleStepDefinitions {
         pointOfSalePage.nameInputBox.sendKeys("New Generation");
 
     }
-/*  I skipped this method since I could not locate it
-    I will try it later
+
     @Then("user enter info to the Parent Category")
     public void user_enter_info_to_the_Parent_Category() {
-       BrowserUtilities.waitForVisibility(pointOfSalePage.parentCategoryDropDownBox,10);
+        BrowserUtilities.waitForVisibility(pointOfSalePage.parentCategoryDropDownBox, 10);
+        pointOfSalePage.parentCategoryDropDownBox.click();
+
+        BrowserUtilities.waitForClickability(pointOfSalePage.optionForDropDownBox,15);
+      pointOfSalePage.optionForDropDownBox.click();
+      // Assert.assertTrue(pointOfSalePage.optionForDropDownBox.isDisplayed());
+
         JavascriptExecutor js = (JavascriptExecutor) Driver.get();
+
+        js.executeScript("arguments[0].click", pointOfSalePage.optionForDropDownBox);
+    }
+
+
         WebElement data = Driver.get().findElement(By.xpath("//li[@class='ui-menu-item']"));
         js.executeScript("arguments[0],click()",data);
       //  pointOfSalePage.parentCategoryDropDownBox.click();

@@ -83,6 +83,8 @@ public class BrowserUtilities {
 
 
     //    PLEASE INSERT THIS METHOD INTO BROWSER UTILS
+
+
     /*
      * takes screenshot
      * whenever you call this method
