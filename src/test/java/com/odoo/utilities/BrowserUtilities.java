@@ -81,6 +81,7 @@ public class BrowserUtilities {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+
     //    PLEASE INSERT THIS METHOD INTO BROWSER UTILS
 
 
