@@ -54,6 +54,14 @@ CRM_StepDefinitions  {
 
     }
 
+    @Then("user verifies, that subtitle {string} is displayed")
+    public void user_verifies_that_subtitle_is_displayed(String subTitle) {
+
+        Assert.assertEquals(subTitle, crm_page.Sub_Title.getText() );
+
+    }
+
+
 
 
 
