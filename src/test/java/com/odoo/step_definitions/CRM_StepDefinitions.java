@@ -14,7 +14,8 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CRM_StepDefinitions  {
+public class
+CRM_StepDefinitions  {
 
     BasePage basePage = new BasePage();
     CRM_Page crm_page = new CRM_Page();

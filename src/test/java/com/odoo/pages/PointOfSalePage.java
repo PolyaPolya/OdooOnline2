@@ -27,17 +27,36 @@ public class PointOfSalePage extends BasePage{
    @FindBy(css = "input[name='name']")
     public WebElement nameInputBox;
 
-   @FindBy (css = "input[class='o_input ui-autocomplete-input'][id='o_field_input_6']")
+   @FindBy (css = "div[class='o_input_dropdown']")
     public WebElement parentCategoryDropDownBox;
 
-   @FindBy(css = "input[id='o_field_input_7']")
+   @FindBy(css = "ul[id='ui-id-1']>li:nth-of-type(6)")
+   public WebElement optionForDropDownBox;
+
+
+   @FindBy(xpath = "//table//tbody//tr//td//*[@name='sequence']")
     public WebElement sequenceInputBox;
 
    @FindBy(xpath = " //button[@class='btn btn-primary btn-sm o_form_button_save']")
    public  WebElement saveButton;
 
+   @FindBy(xpath = "//table//tbody//td//*[text()='New Generation']")
+    public WebElement createdName;
 
+   @FindBy(xpath = "//a[@data-menu='489']//span")
+    public WebElement ordersButton;
+  
+   @FindBy(xpath = "//table//tbody//td//*[text()='110,110']")
+    public WebElement createdSequence;
 
+   @FindBy(xpath = "//table//tbody//tr[1]//td//div//input[1]")
+    public WebElement deletedProductCheckbox;
+
+   @FindBy(xpath="//div[@class='btn-group o_dropdown']//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'][contains(text(),'Action')]")
+    public WebElement actionButton;
+
+   @FindBy(xpath = "//li//a[contains(text(),'Delete')]")
+    public WebElement deleteButton;
 
     }
 

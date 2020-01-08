@@ -21,7 +21,7 @@ public class LoginStepDefinitions extends BasePage {
 
         @Then("user click Sign in button")
         public void user_click_Sign_in_button() {
-            BrowserUtilities.waitForClickablility(loginPage.SignInButton, 10);
+            BrowserUtilities.waitForClickability(loginPage.SignInButton, 10);
             loginPage.SignInButton.click();
         }
 
