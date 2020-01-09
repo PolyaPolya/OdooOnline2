@@ -1,4 +1,4 @@
-
+@PointOfSale
 Feature: Point Of Sale
 As a user I should be able create product under the "Product" subModule in the Point Of Sale Page
 
@@ -7,7 +7,7 @@ As a user I should be able create product under the "Product" subModule in the P
     Then user click Sign in button
     Then user logs in as pos manager with "posmanager60@info.com" username and "posmanager" password
 
-  @PointOfSale
+
   Scenario: Creating  a Product under "Product" submodule
     Then user will click the Point Of Sale tab
     Then user will click the Products subModule first and then click the Pos Categories
@@ -20,7 +20,7 @@ As a user I should be able create product under the "Product" subModule in the P
     And user will verify "110,110" for Sequence
 
 
-    @Orders
+
     Scenario: Deleting an order under "Orders" module
       Then user will click the Point Of Sale tab
       Then user will click the Orders button

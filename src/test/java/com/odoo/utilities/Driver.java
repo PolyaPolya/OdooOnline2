@@ -2,55 +2,77 @@ package com.odoo.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
-    private static WebDriver driver;
+    private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
 
-    //    you cannot do like this, if constructor is private Driver obj = new Driver()
     private Driver() {
 
     }
-    //if switch statement complains on string parameter
-    //change java version to 7+, better at least 8
-    //File--> Project Structure--> Set Project language level to at least 8 or above
+
     public static WebDriver get() {
-        //if webdriver object was not created yet
-        if (driver == null) {
-            //create webdriver object based on browser value from properties file
-            String browser = ConfigurationReader.getProperty("browser");
+        //if this thread doesn't have a web driver yet - create it and add to pool
+        if (driverPool.get() == null) {
+            System.out.println("TRYING TO CREATE DRIVER");
+            // this line will tell which browser should open based on the value from properties file
+            String browserParamFromEnv = System.getProperty("browser");
+            String browser = browserParamFromEnv == null ? ConfigurationReader.getProperty("browser") : browserParamFromEnv;
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    //to configure chrome browser for tests
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    //to run tests without interface, set to true
-                    chromeOptions.setHeadless(false);
-                    driver = new ChromeDriver(chromeOptions);
+                    driverPool.set(new ChromeDriver());
+                    break;
+                case "chrome_headless":
+                    WebDriverManager.chromedriver().setup();
+                    driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                    driverPool.set(new FirefoxDriver());
                     break;
-                default:
-                    //if browser type is wrong, throw exception.
-                    //no browser will be opened
-                    throw new RuntimeException("Wrong browser type!");
+                case "firefox_headless":
+                    WebDriverManager.firefoxdriver().setup();
+                    driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
+                    break;
+                case "ie":
+                    if (!System.getProperty("os.name").toLowerCase().contains("windows")) {
+                        throw new WebDriverException("Your OS doesn't support Internet Explorer");
+                    }
+                    WebDriverManager.iedriver().setup();
+                    driverPool.set(new InternetExplorerDriver());
+                    break;
+                case "edge":
+                    if (!System.getProperty("os.name").toLowerCase().contains("windows")) {
+                        throw new WebDriverException("Your OS doesn't support Edge");
+                    }
+                    WebDriverManager.edgedriver().setup();
+                    driverPool.set(new EdgeDriver());
+                    break;
+                case "safari":
+                    if (!System.getProperty("os.name").toLowerCase().contains("mac")) {
+                        throw new WebDriverException("Your OS doesn't support Safari");
+                    }
+                    WebDriverManager.getInstance(SafariDriver.class).setup();
+                    driverPool.set(new SafariDriver());
+                    break;
             }
+
         }
-        //if webdriver object was created - you can use it
-        return driver;
+        //return corresponded to thread id webdriver object
+        return driverPool.get();
     }
 
     public static void close() {
-        //if driver still exist
-        if (driver != null) {
-            //close all browsers
-            driver.quit();
-            //destroy driver object, ready for gc
-            driver = null;
-        }
+        driverPool.get().quit();
+        driverPool.remove();
+
     }
 }
