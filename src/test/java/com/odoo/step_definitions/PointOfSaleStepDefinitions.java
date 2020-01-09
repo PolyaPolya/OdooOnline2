@@ -46,8 +46,8 @@ public class PointOfSaleStepDefinitions {
 
     }
 
-    @Then("user enter info to the Parent Category")
-    public void user_enter_info_to_the_Parent_Category() {
+    @Then("user choose an option from the Parent Category box")
+    public void user_choose_an_option_from_the_Parent_Category_box()  {
         BrowserUtilities.waitForVisibility(pointOfSalePage.parentCategoryDropDownBox, 10);
         pointOfSalePage.parentCategoryDropDownBox.click();
 
