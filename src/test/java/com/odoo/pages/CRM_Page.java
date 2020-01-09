@@ -15,9 +15,20 @@ public class CRM_Page {
     @FindBy (css = "o_column_title")
     public List<WebElement> columnNames;
 
+    @FindBy(xpath = "//li[text()='Pipeline']")
+    public WebElement Sub_Title;
+
+
+
+
+
+
+
     public CRM_Page() {
         PageFactory.initElements(Driver.get(), this);
     }
+
+
 
     public void verifyColumns(String column1, String column2, String column3, String column4) {
 

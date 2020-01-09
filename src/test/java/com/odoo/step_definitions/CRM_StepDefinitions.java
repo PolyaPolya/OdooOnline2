@@ -14,7 +14,8 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CRM_StepDefinitions  {
+public class
+CRM_StepDefinitions  {
 
     BasePage basePage = new BasePage();
     CRM_Page crm_page = new CRM_Page();
@@ -52,6 +53,14 @@ public class CRM_StepDefinitions  {
 
 
     }
+
+    @Then("user verifies, that subtitle {string} is displayed")
+    public void user_verifies_that_subtitle_is_displayed(String subTitle) {
+
+        Assert.assertEquals(subTitle, crm_page.Sub_Title.getText() );
+
+    }
+
 
 
 
