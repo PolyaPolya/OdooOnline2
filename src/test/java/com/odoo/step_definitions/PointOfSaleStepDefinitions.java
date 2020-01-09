@@ -60,13 +60,6 @@ public class PointOfSaleStepDefinitions {
         js.executeScript("arguments[0].click", pointOfSalePage.optionForDropDownBox);
     }
 
-        // please verify which js.executeScript executer do you need 60 or 65
-        WebElement data = Driver.get().findElement(By.xpath("//li[@class='ui-menu-item']"));
-
-        //js.executeScript("arguments[0],click()",data);
-
-      //  pointOfSalePage.parentCategoryDropDownBox.click();
-    //    pointOfSalePage.parentCategoryDropDownBox.sendKeys("Books");
 
 
     @Then("user enter data to the box of sequence")
