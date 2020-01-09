@@ -1,6 +1,5 @@
 Feature: Customer Relationship Management
-  As a user, I should be able to see all their leads/opportunities in one location,
-  manage them from one stage to another, and analyze their results
+
 
   Background: User logs in as events crm manager
     Given user in on the login page
@@ -13,3 +12,7 @@ Feature: Customer Relationship Management
     And user verifies, that columns name "New","Proposition","Qualified","Approved" are visible
     Then user finds pipeline by the "test1"
     And user moves pipeline to "Proposition" column
+
+    @Verify_Subtitle
+    Scenario: As a user, I should be able to verify subtitle "Pipeline" under the CRM module
+      Then user verifies, that subtitle "Pipeline" is displayed

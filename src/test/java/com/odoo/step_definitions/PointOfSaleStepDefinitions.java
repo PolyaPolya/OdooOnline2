@@ -28,7 +28,7 @@ public class PointOfSaleStepDefinitions {
 
     @Then("user will click the Products subModule first and then click the Pos Categories")
     public void user_will_click_the_Products_subModule_first_and_then_click_the_Pos_Categories() {
-       pointOfSalePage.productSubmoduleLink.click();
+        pointOfSalePage.productSubmoduleLink.click();
     }
 
     @Then("user will click the Create button")
@@ -56,8 +56,17 @@ public class PointOfSaleStepDefinitions {
       // Assert.assertTrue(pointOfSalePage.optionForDropDownBox.isDisplayed());
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.get();
+
         js.executeScript("arguments[0].click", pointOfSalePage.optionForDropDownBox);
     }
+
+        // please verify which js.executeScript executer do you need 60 or 65
+        WebElement data = Driver.get().findElement(By.xpath("//li[@class='ui-menu-item']"));
+
+        //js.executeScript("arguments[0],click()",data);
+
+      //  pointOfSalePage.parentCategoryDropDownBox.click();
+    //    pointOfSalePage.parentCategoryDropDownBox.sendKeys("Books");
 
 
     @Then("user enter data to the box of sequence")
@@ -70,7 +79,7 @@ public class PointOfSaleStepDefinitions {
 
     }
 
-     @Then("User clicks Save button")
+    @Then("User clicks Save button")
     public void user_clicks_Save_button() {
         pointOfSalePage.saveButton.click();
 
@@ -87,15 +96,15 @@ public class PointOfSaleStepDefinitions {
     @Then("user will verify {string} for Sequence")
     public void user_will_verify_for_Sequence(String string) {
         BrowserUtilities.waitForVisibility(pointOfSalePage.createdSequence,10);
-       String expected ="110,110";
-       String actual =pointOfSalePage.createdSequence.getText();
-       Assert.assertEquals(expected,actual);
+        String expected ="110,110";
+        String actual =pointOfSalePage.createdSequence.getText();
+        Assert.assertEquals(expected,actual);
     }
 
     @Then("user will click the Orders button")
     public void user_will_click_the_Orders_button() {
         wait.until(ExpectedConditions.visibilityOf(pointOfSalePage.ordersButton));
-       BrowserUtilities.waitForClickability(pointOfSalePage.ordersButton,15);
+        BrowserUtilities.waitForClickability(pointOfSalePage.ordersButton,15);
         pointOfSalePage.ordersButton.click();
     }
 
