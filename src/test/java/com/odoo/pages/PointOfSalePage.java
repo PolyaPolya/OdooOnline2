@@ -30,7 +30,8 @@ public class PointOfSalePage extends BasePage{
    @FindBy (css = "div[class='o_input_dropdown']")
     public WebElement parentCategoryDropDownBox;
 
-   @FindBy(css = "ul[id='ui-id-1']>li:nth-of-type(6)")
+ //  @FindBy(css = "ul[id='ui-id-1']>li:nth-of-type(6)")
+    @FindBy(xpath = "//li[@class='ui-menu-item'] //*[text()='Computers and Laptops']")
    public WebElement optionForDropDownBox;
 
 
